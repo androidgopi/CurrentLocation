@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TableLayout
+        android:id="@+id/tab_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffff" >
+
+        <TableRow
+            android:id="@+id/locRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/location"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/location_edttxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:editable="false"
+                android:gravity="left"
+                android:hint="Click Icon to Show location"
+                android:padding="5dp"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/Img_ShowAddress"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/tvAddress"
+                android:background="@drawable/loc1" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/service_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint=" get current location lattitude and longitude through Service "
+        android:padding="5dp"
+        android:textColor="#000000" />
+
+
+
+    <Button
+        android:id="@+id/start_background_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start Service"
+        android:layout_margin="15dp"
+
+        />
+
+    <Button
+        android:id="@+id/stop_background_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stop Service"
+        android:layout_margin="15dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google Map"
+        android:layout_margin="15dp"
+
+        />
+
+    <Button
+        android:id="@+id/two_markers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Two MArkers"
+        android:layout_margin="15dp"
+
+        />
+
+
+</LinearLayout>

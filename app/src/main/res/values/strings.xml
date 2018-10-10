@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CurrentLocation</string>
+    <string name="location">Location</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map_src_title">Current Location</string>
+    <string name="title_activity_two_markers">Map</string>
+</resources>
